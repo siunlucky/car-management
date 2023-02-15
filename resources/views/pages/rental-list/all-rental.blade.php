@@ -23,7 +23,7 @@
                     <th class="px-6 py-3 text-center">Start | End</th>
                     <th class="px-6 py-3 text-center">From</th>
                     <th class="px-6 py-3 text-center">Destination</th>
-                    <th class="w-40 px-6 py-3 text-left">Status</th>
+                    <th class="px-6 text-center w-50">Status</th>
                     <th class="px-6 py-3 text-center">Actions</th>
                 </tr>
             </thead>
@@ -61,9 +61,27 @@
                             <span class="font-medium">{{ $rental->office->name_office }}</span>
                         </div>
                     </td>
-                    <td class="px-6 py-3 text-center">
-                        <div class="flex items-center justify-center">
-                            <span class="font-medium">{{ $rental->status }}</span>
+                    <td class="px-6 py-3">
+                        <div class="flex items-center">
+
+                            <span class="font-medium">
+                                @if ($rental->status == "Waiting For Approval")
+                                <span class="inline-block w-3 h-3 mr-1 bg-yellow-400 rounded-full"></span>
+                                @endif
+                                @if ($rental->status == "Approved")
+                                <span class="inline-block w-3 h-3 mr-1 bg-blue-400 rounded-full"></span>
+                                @endif
+                                @if($rental->status == "in Use")
+                                <span class="inline-block w-3 h-3 mr-1 bg-green-500 rounded-full"></span>
+                                @endif
+                                @if ($rental->status == "Completed")
+                                <span class="inline-block w-3 h-3 mr-1 bg-black rounded-full"></span>
+                                @endif
+                                @if ($rental->status == "Cancelled")
+                                <span class="inline-block w-3 h-3 mr-1 bg-red-500 rounded-full"></span>
+                                @endif
+                                {{ $rental->status }}
+                            </span>
                         </div>
                     </td>
 

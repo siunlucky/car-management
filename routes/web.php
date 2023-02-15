@@ -35,7 +35,7 @@ Route::get('/manage-rental/completed-rental', [ManageRentalController::class, 'c
 Route::get('/manage-rental/rental-request', [ManageRentalController::class, 'rentalRequest'])->middleware('auth');
 Route::get('/manage-rental/rental-detail/{rental:id}', [ManageRentalController::class, 'rentalDetail'])->middleware('auth');
 Route::get('/manage-rental/active-rental', [ManageRentalController::class, 'activeRental'])->middleware('auth');
-Route::get('/manage-rental/all-rental/export', [ManageRentalController::class, 'export'])->middleware('auth');
+Route::get('/manage-rental/all-rental/export', [ManageRentalController::class, 'rentalExport'])->middleware('auth');
 
 Route::get('/manage-rental/{rental:id}/approved', [ManageRentalController::class, 'approving'])->middleware('auth');
 Route::get('/manage-rental/{rental:id}/declined', [ManageRentalController::class, 'declining'])->middleware('auth');

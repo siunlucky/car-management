@@ -6,11 +6,13 @@ use App\Models\Car;
 use App\Models\Driver;
 use App\Models\Office;
 use App\Models\Rental;
-use Illuminate\Http\Request;
-use RealRashid\SweetAlert\Facades\Alert;
-use Box\Spout\Reader\ReaderFactory;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
 use Box\Spout\Common\Type;
+use Illuminate\Http\Request;
+use App\Exports\RentalExport;
+
+use Maatwebsite\Excel\Facades\Excel;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class ManageRentalController extends Controller
 {
@@ -147,23 +149,9 @@ class ManageRentalController extends Controller
         return redirect()->back()->with('success', 'Data updated successfully!');
     }
 
-    public function export()
+    public function rentalExport()
 
     {
-        $rentals = Rental::all();
-        $writer = WriterEntityFactory::createXLSXWriter();
-        $writer->openToBrowser('rentals.xlsx');
-        $singleRow = WriterEntityFactory::createRow(['id', 'car_id', 'application_user_id', 'application_datetime', 'status', 'destination', 'description', 'approval_superior_id', 'approval_head_id', 'decline_user_id', 'driver_id', 'start_date', 'end_date', 'return_date', 'created_at']);
-        $writer->addRow($singleRow);
-
-        foreach ($rentals as $rental) {
-            $row = WriterEntityFactory::createRow([$rental->id, $rental->application_user_id, $rental->application_datetime, $rental->status, $rental->destination, $rental->description, $rental->approval_superior_id, $rental->approval_head_id, $rental->decline_user_id, $rental->driver_id, $rental->start_date, $rental->end_date, $rental->return_date, $rental->created_at]);
-            $writer->addRow($row);
-        }
-
-        $writer->close();
-
-
-        return redirect()->back()->download('rentals.xlsx');
+        return Excel::download(new RentalExport, 'rental.xlsx');
     }
 }

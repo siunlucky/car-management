@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name_car');
             $table->string('photo_car');
             $table->enum('status', ['available', 'unavailable']);
+            $table->string('number_plate');
             $table->foreignId('id_office');
             $table->timestamps();
         });

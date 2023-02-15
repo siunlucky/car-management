@@ -28,24 +28,28 @@ class DatabaseSeeder extends Seeder
             'name_car' => 'Dump Truck',
             'photo_car' => 'truck_dump.jpeg',
             'status' => 'available',
+            'number_plate' => 'N 5126 AD',
             'id_office' => '1'
         ]);
         Car::create([
             'name_car' => 'UD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'B 1126 AG',
             'id_office' => '1'
         ]);
         Car::create([
             'name_car' => 'MD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'N 0522 BB',
             'id_office' => '1'
         ]);
         Car::create([
             'name_car' => 'Isuzu Truck',
             'photo_car' => 'truck_isuzu.jpg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '1'
         ]);
 
@@ -53,24 +57,28 @@ class DatabaseSeeder extends Seeder
             'name_car' => 'Dump Truck',
             'photo_car' => 'truck_dump.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '2'
         ]);
         Car::create([
             'name_car' => 'UD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '2'
         ]);
         Car::create([
             'name_car' => 'MD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '2'
         ]);
         Car::create([
             'name_car' => 'Isuzu Truck',
             'photo_car' => 'truck_isuzu.jpg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '2'
         ]);
 
@@ -78,24 +86,28 @@ class DatabaseSeeder extends Seeder
             'name_car' => 'Dump Truck',
             'photo_car' => 'truck_dump.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '3'
         ]);
         Car::create([
             'name_car' => 'UD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '3'
         ]);
         Car::create([
             'name_car' => 'MD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '3'
         ]);
         Car::create([
             'name_car' => 'Isuzu Truck',
             'photo_car' => 'truck_isuzu.jpg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '3'
         ]);
 
@@ -103,24 +115,28 @@ class DatabaseSeeder extends Seeder
             'name_car' => 'Dump Truck',
             'photo_car' => 'truck_dump.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '4'
         ]);
         Car::create([
             'name_car' => 'UD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '4'
         ]);
         Car::create([
             'name_car' => 'MD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '4'
         ]);
         Car::create([
             'name_car' => 'Isuzu Truck',
             'photo_car' => 'truck_isuzu.jpg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '4'
         ]);
 
@@ -128,24 +144,28 @@ class DatabaseSeeder extends Seeder
             'name_car' => 'Dump Truck',
             'photo_car' => 'truck_dump.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '5'
         ]);
         Car::create([
             'name_car' => 'UD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '5'
         ]);
         Car::create([
             'name_car' => 'MD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '5'
         ]);
         Car::create([
             'name_car' => 'Isuzu Truck',
             'photo_car' => 'truck_isuzu.jpg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '5'
         ]);
 
@@ -153,24 +173,28 @@ class DatabaseSeeder extends Seeder
             'name_car' => 'Dump Truck',
             'photo_car' => 'truck_dump.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '6'
         ]);
         Car::create([
             'name_car' => 'UD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '6'
         ]);
         Car::create([
             'name_car' => 'MD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '6'
         ]);
         Car::create([
             'name_car' => 'Isuzu Truck',
             'photo_car' => 'truck_isuzu.jpg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '6'
         ]);
 
@@ -178,24 +202,28 @@ class DatabaseSeeder extends Seeder
             'name_car' => 'Dump Truck',
             'photo_car' => 'truck_dump.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '7'
         ]);
         Car::create([
             'name_car' => 'UD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '7'
         ]);
         Car::create([
             'name_car' => 'MD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '7'
         ]);
         Car::create([
             'name_car' => 'Isuzu Truck',
             'photo_car' => 'truck_isuzu.jpg',
             'status' => 'unavailable',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '7'
         ]);
 
@@ -203,24 +231,28 @@ class DatabaseSeeder extends Seeder
             'name_car' => 'Dump Truck',
             'photo_car' => 'truck_dump.jpeg',
             'status' => 'available',
+            'number_plate' => 'C 1623 GS',
             'id_office' => '8'
         ]);
         Car::create([
             'name_car' => 'UD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'AG 5120 SS',
             'id_office' => '8'
         ]);
         Car::create([
             'name_car' => 'MD Truck',
             'photo_car' => 'truck_ud.jpeg',
             'status' => 'available',
+            'number_plate' => 'AG 5120 SS',
             'id_office' => '8'
         ]);
         Car::create([
             'name_car' => 'Isuzu Truck',
             'photo_car' => 'truck_isuzu.jpg',
             'status' => 'available',
+            'number_plate' => 'AG 5120 SS',
             'id_office' => '8'
         ]);
 
